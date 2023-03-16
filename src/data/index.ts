@@ -1,7 +1,8 @@
+import { pomodoro, rickandmorty, todo, wheather, profile } from '../assets';
 export const languageData = {
   es: {
     profile: {
-      image: 'public/profile.png',
+      image: profile,
       name: 'Ricardo Sanchez',
       about: `Desarrollador web con experiencia en tecnologias como React, Typescript, Django y Node. En mi tiempo libre, me gusta leer sobre tecnología y ciencia, practicar deportes al aire libre y pasar tiempo con mi familia y amigos.`,
       profession: 'Estudiante de Ingeniería en Sistemas de Información',
@@ -16,7 +17,7 @@ export const languageData = {
     },
     projects: [
       {
-        image: 'public/pomodoro.jpg',
+        image: pomodoro,
         type: 'Aplicación web',
         name: 'Pomodoro App',
         status: 'terminado',
@@ -25,7 +26,7 @@ export const languageData = {
         link: 'https://you-pomodoro.vercel.app/',
       },
       {
-        image: 'public/weather.jpg',
+        image: wheather,
         type: 'Aplicación web',
         name: 'Weather City App',
         status: 'terminado',
@@ -34,7 +35,7 @@ export const languageData = {
         link: 'https://searchweathertemp.vercel.app/',
       },
       {
-        image: 'public/rickandmorty.jpg',
+        image: rickandmorty,
         type: 'Aplicación web',
         name: 'Find Character',
         status: 'en desarrollo',
@@ -43,7 +44,7 @@ export const languageData = {
         link: 'https://rickandmortyapp.stackblitz.io/',
       },
       {
-        image: 'public/todo.jpg',
+        image: todo,
         type: 'Aplicación web',
         name: 'ToDo App',
         status: 'terminado',
@@ -97,7 +98,7 @@ export const languageData = {
   },
   en: {
     profile: {
-      image: 'public/profile.jpg',
+      image: profile,
       name: 'Ricardo Sanchez',
       about: `Web developer with experience in technologies such as React, Typescript, Django, and Node. In my free time, I enjoy reading about technology and science, practicing outdoor sports, and spending time with my family and friends.`,
       profession: 'Information Systems Engineering Student',
@@ -112,7 +113,7 @@ export const languageData = {
     },
     projects: [
       {
-        image: 'public/pomodoro.jpg',
+        image: pomodoro,
         type: 'Web application',
         name: 'Pomodoro App',
         status: 'Finished',
@@ -121,7 +122,7 @@ export const languageData = {
         link: 'https://you-pomodoro.vercel.app/',
       },
       {
-        image: 'public/weather.jpg',
+        image: wheather,
         type: 'Web application',
         name: 'Weather City App',
         status: 'Finished',
@@ -130,7 +131,7 @@ export const languageData = {
         link: 'https://searchweathertemp.vercel.app/',
       },
       {
-        image: 'public/rickandmorty.jpg',
+        image: rickandmorty,
         type: 'Web application',
         name: 'Find Character',
         status: 'Developing',
@@ -139,7 +140,7 @@ export const languageData = {
         link: 'https://rickandmortyapp.stackblitz.io/',
       },
       {
-        image: 'public/todo.jpg',
+        image: todo,
         type: 'Web application',
         name: 'ToDo App',
         status: 'finished',
