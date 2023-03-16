@@ -1,7 +1,7 @@
 export const languageData = {
   es: {
     profile: {
-      image: 'public/profile.png',
+      image: 'public/profile.jpeg',
       name: 'Ricardo Sanchez',
       about: `Desarrollador web con experiencia en tecnologias como React, Typescript, Django y Node. En mi tiempo libre, me gusta leer sobre tecnología y ciencia, practicar deportes al aire libre y pasar tiempo con mi familia y amigos.`,
       profession: 'Estudiante de Ingeniería en Sistemas de Información',
