@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+      />
+      <link rel="icon" type="image/svg+xml" href="public/favi.svg" />
+      <title>Ricardo Sanchez - Portfolio</title>
+    </head>
+    <body class="dark-theme">
+      <header class="profile container grid"></header>
+      <main class="main">
+        <section class="filters container">
+          <ul class="filters__content"></ul>
+  
+          <div class="filters__sections">
+            <div
+              class="projects__content grid filters__active"
+              data-content
+              id="projects"
+            ></div>
+            <div class="skills__content grid" data-content id="skills"></div>
+            <!-- <div class="jobs__content grid" data-content id="jobs"></div> -->
+          </div>
+        </section>
+      </main>
+      <section class="toggle">
+        <button class="toggle__idiom" id="lang-button">
+          <i class="ri-english-input"></i>
+        </button>
+        <button class="toggle__theme" id="theme-button">
+          <i class="ri-moon-line"></i>
+        </button>
+      </section>
+      <script type="module" src="/src/index.ts"></script>
+    </body>
+  </html>  
+</html>
