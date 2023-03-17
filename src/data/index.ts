@@ -1,4 +1,11 @@
-import { pomodoro, rickandmorty, todo, wheather, profile } from '../assets';
+import {
+  pomodoro,
+  rickandmorty,
+  todo,
+  wheather,
+  profile,
+  me_cv,
+} from '../assets';
 export const languageData = {
   es: {
     profile: {
@@ -98,7 +105,7 @@ export const languageData = {
   },
   en: {
     profile: {
-      image: profile,
+      image: 'public/profile.jpg',
       name: 'Ricardo Sanchez',
       about: `Web developer with experience in technologies such as React, Typescript, Django, and Node. In my free time, I enjoy reading about technology and science, practicing outdoor sports, and spending time with my family and friends.`,
       profession: 'Information Systems Engineering Student',
@@ -197,6 +204,7 @@ export const languageData = {
 const languageDataLocal = {
   en: {
     cvName: 'Download CV',
+    fileCv: me_cv,
     tabs: [
       { name: 'projects', id: 'projects' },
       { name: 'skills', id: 'skills' },
@@ -204,6 +212,7 @@ const languageDataLocal = {
   },
   es: {
     cvName: 'Descargar CV',
+    fileCv: me_cv,
     tabs: [
       { name: 'proyectos', id: 'projects' },
       { name: 'tecnologias', id: 'skills' },
@@ -214,11 +223,11 @@ const languageDataLocal = {
 export const updateLangData = (lang: string) => {
   const selectLang = lang === 'es' ? 'es' : 'en';
   const currentLanguage = languageData[selectLang];
-  const { tabs, cvName } = languageDataLocal[selectLang];
+  const { tabs, cvName, fileCv } = languageDataLocal[selectLang];
 
   return {
     ...currentLanguage,
     tabs,
-    profile: { ...currentLanguage.profile, cvName },
+    profile: { ...currentLanguage.profile, cvName, fileCv },
   };
 };

@@ -9,7 +9,7 @@ export interface Project {
 }
 export interface Skill {
   category: string;
-  skills: string[];    
+  skills: string[];
 }
 export interface Job {
   position: string;
@@ -24,12 +24,12 @@ export interface Profile {
   name: string;
   about: string;
   profession: string;
-  socialLinks: { name: string; link: string; }[];
+  socialLinks: { name: string; link: string }[];
   cvName: string;
+  fileCv: string;
 }
 
-export type TypeContentItem = Project | Skill | Job
-
+export type TypeContentItem = Project | Skill | Job;
 
 export interface ContentTab {
   name: string;
