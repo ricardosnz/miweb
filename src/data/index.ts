@@ -2,7 +2,7 @@ import {
   pomodoro,
   rickandmorty,
   todo,
-  wheather,
+  weather,
   profile,
   ricardo_cv,
 } from '../assets';
@@ -33,7 +33,7 @@ export const languageData = {
         link: 'https://you-pomodoro.vercel.app/',
       },
       {
-        image: wheather,
+        image: weather,
         type: 'Aplicación web',
         name: 'Weather City App',
         status: 'terminado',
@@ -129,7 +129,7 @@ export const languageData = {
         link: 'https://you-pomodoro.vercel.app/',
       },
       {
-        image: wheather,
+        image: weather,
         type: 'Web application',
         name: 'Weather City App',
         status: 'Finished',
