@@ -4,12 +4,12 @@ import {
   todo,
   wheather,
   profile,
-  me_cv,
+  ricardo_cv,
 } from '../assets';
 export const languageData = {
   es: {
     profile: {
-      image: 'public/profile.jpeg',
+      image: profile,
       name: 'Ricardo Sanchez',
       about: `Desarrollador web con experiencia en tecnologias como React, Typescript, Django y Node. En mi tiempo libre, me gusta leer sobre tecnología y ciencia, practicar deportes al aire libre y pasar tiempo con mi familia y amigos.`,
       profession: 'Estudiante de Ingeniería en Sistemas de Información',
@@ -105,7 +105,7 @@ export const languageData = {
   },
   en: {
     profile: {
-      image: 'public/profile.jpg',
+      image: profile,
       name: 'Ricardo Sanchez',
       about: `Web developer with experience in technologies such as React, Typescript, Django, and Node. In my free time, I enjoy reading about technology and science, practicing outdoor sports, and spending time with my family and friends.`,
       profession: 'Information Systems Engineering Student',
@@ -204,7 +204,7 @@ export const languageData = {
 const languageDataLocal = {
   en: {
     cvName: 'Download CV',
-    fileCv: me_cv,
+    fileCv: ricardo_cv,
     tabs: [
       { name: 'projects', id: 'projects' },
       { name: 'skills', id: 'skills' },
@@ -212,7 +212,7 @@ const languageDataLocal = {
   },
   es: {
     cvName: 'Descargar CV',
-    fileCv: me_cv,
+    fileCv: ricardo_cv,
     tabs: [
       { name: 'proyectos', id: 'projects' },
       { name: 'tecnologias', id: 'skills' },
