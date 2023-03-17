@@ -15,7 +15,7 @@ const createSocialLinks = (socialLinks: Profile['socialLinks']) => {
 };
 
 export function createProfileCard(container: HTMLElement, profile: Profile) {
-  const { image, name, about, socialLinks, cvName } = profile;
+  const { image, name, about, socialLinks, cvName, fileCv } = profile;
   container.innerHTML = `
       <div class="profile__perfil">
         <img src="${image}" alt="${name}" />
@@ -28,7 +28,7 @@ export function createProfileCard(container: HTMLElement, profile: Profile) {
         </h3>      
         ${createSocialLinks(socialLinks)}
       </div>
-      <a download="" href="assets/pdf/me_cv.pdf" class="profile__button-cv button">
+      <a href="${fileCv}" target="_blank" class="profile__button-cv button">
         ${cvName}<i class="ri-download-line"></i>
       </a>`;
 }

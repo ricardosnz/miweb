@@ -1,3 +1,11 @@
+import {
+  pomodoro,
+  rickandmorty,
+  todo,
+  wheather,
+  profile,
+  me_cv,
+} from '../assets';
 export const languageData = {
   es: {
     profile: {
@@ -16,7 +24,7 @@ export const languageData = {
     },
     projects: [
       {
-        image: 'public/pomodoro.jpg',
+        image: pomodoro,
         type: 'Aplicación web',
         name: 'Pomodoro App',
         status: 'terminado',
@@ -25,7 +33,7 @@ export const languageData = {
         link: 'https://you-pomodoro.vercel.app/',
       },
       {
-        image: 'public/weather.jpg',
+        image: wheather,
         type: 'Aplicación web',
         name: 'Weather City App',
         status: 'terminado',
@@ -34,7 +42,7 @@ export const languageData = {
         link: 'https://searchweathertemp.vercel.app/',
       },
       {
-        image: 'public/rickandmorty.jpg',
+        image: rickandmorty,
         type: 'Aplicación web',
         name: 'Find Character',
         status: 'en desarrollo',
@@ -43,7 +51,7 @@ export const languageData = {
         link: 'https://rickandmortyapp.stackblitz.io/',
       },
       {
-        image: 'public/todo.jpg',
+        image: todo,
         type: 'Aplicación web',
         name: 'ToDo App',
         status: 'terminado',
@@ -112,7 +120,7 @@ export const languageData = {
     },
     projects: [
       {
-        image: 'public/pomodoro.jpg',
+        image: pomodoro,
         type: 'Web application',
         name: 'Pomodoro App',
         status: 'Finished',
@@ -121,7 +129,7 @@ export const languageData = {
         link: 'https://you-pomodoro.vercel.app/',
       },
       {
-        image: 'public/weather.jpg',
+        image: wheather,
         type: 'Web application',
         name: 'Weather City App',
         status: 'Finished',
@@ -130,7 +138,7 @@ export const languageData = {
         link: 'https://searchweathertemp.vercel.app/',
       },
       {
-        image: 'public/rickandmorty.jpg',
+        image: rickandmorty,
         type: 'Web application',
         name: 'Find Character',
         status: 'Developing',
@@ -139,7 +147,7 @@ export const languageData = {
         link: 'https://rickandmortyapp.stackblitz.io/',
       },
       {
-        image: 'public/todo.jpg',
+        image: todo,
         type: 'Web application',
         name: 'ToDo App',
         status: 'finished',
@@ -196,6 +204,7 @@ export const languageData = {
 const languageDataLocal = {
   en: {
     cvName: 'Download CV',
+    fileCv: me_cv,
     tabs: [
       { name: 'projects', id: 'projects' },
       { name: 'skills', id: 'skills' },
@@ -203,6 +212,7 @@ const languageDataLocal = {
   },
   es: {
     cvName: 'Descargar CV',
+    fileCv: me_cv,
     tabs: [
       { name: 'proyectos', id: 'projects' },
       { name: 'tecnologias', id: 'skills' },
@@ -213,11 +223,11 @@ const languageDataLocal = {
 export const updateLangData = (lang: string) => {
   const selectLang = lang === 'es' ? 'es' : 'en';
   const currentLanguage = languageData[selectLang];
-  const { tabs, cvName } = languageDataLocal[selectLang];
+  const { tabs, cvName, fileCv } = languageDataLocal[selectLang];
 
   return {
     ...currentLanguage,
     tabs,
-    profile: { ...currentLanguage.profile, cvName },
+    profile: { ...currentLanguage.profile, cvName, fileCv },
   };
 };
